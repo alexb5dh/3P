@@ -32,3 +32,6 @@ print("✓: " + str(max_subarray))
 
 from min_max_division import min_max_division
 # todo: tests for min_max_division
+
+from number_solitaire import number_solitaire
+# todo: tests for number_solitaire
