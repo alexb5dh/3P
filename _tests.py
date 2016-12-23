@@ -29,3 +29,6 @@ assert max_subarray([-1, -2, 3, 4, -5, 6]) == (8, 2, 6)
 assert max_subarray([2, 3, -1, -20, 5, 10]) == (15, 4, 6)
 assert max_subarray([-2, 1, -3, 4, -1, 2, 1, -5, 4]) == (6, 3, 7)
 print("✓: " + str(max_subarray))
+
+from min_max_division import min_max_division
+# todo: tests for min_max_division
