@@ -49,3 +49,7 @@ print("✓: " + str(flip))
 from repeat_and_missing_numbers import repeat_and_missing_numbers
 assert repeat_and_missing_numbers([3, 1, 2, 5, 3]) == (3, 4)
 print("✓: " + str(repeat_and_missing_numbers))
+
+from max_abs_diff_ind import max_abs_diff_ind
+assert max_abs_diff_ind([1, 3, -1]) == 5
+print("✓: " + str(max_abs_diff_ind))
