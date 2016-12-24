@@ -4,11 +4,12 @@
 # Space: O(1)
 
 # Find sum and indices for maximum sum subarray
-# Leftmost solution is preferred even if it's longer
+# Shortest and then leftmost solution is preferred
+# Empty array is allowed
 def max_subarray(array):
     prev, best = (0, -1, -1), (0, -1, -1)
     for i, x in enumerate(array):
-        if x > prev[0] + x:
+        if prev[0] <= 0:
             curr = (x, i, i + 1)
         else:
             curr = (prev[0] + x, prev[1], i + 1)
