@@ -45,3 +45,7 @@ assert flip('010') == (0,1)
 assert flip('0011101') == (0,2)
 assert flip('01010001') == (0, 7)
 print("✓: " + str(flip))
+
+from repeat_and_missing_numbers import repeat_and_missing_numbers
+assert repeat_and_missing_numbers([3, 1, 2, 5, 3]) == (3, 4)
+print("✓: " + str(repeat_and_missing_numbers))
