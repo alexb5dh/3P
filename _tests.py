@@ -38,3 +38,10 @@ from min_max_division import min_max_division
 
 from number_solitaire import number_solitaire
 # todo: tests for number_solitaire
+
+from flip import flip
+assert flip('111') == ()
+assert flip('010') == (0,1)
+assert flip('0011101') == (0,2)
+assert flip('01010001') == (0, 7)
+print("✓: " + str(flip))
