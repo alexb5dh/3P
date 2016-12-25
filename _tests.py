@@ -53,3 +53,6 @@ print("✓: " + str(repeat_and_missing_numbers))
 from max_abs_diff_ind import max_abs_diff_ind
 assert max_abs_diff_ind([1, 3, -1]) == 5
 print("✓: " + str(max_abs_diff_ind))
+
+from btree_from_sorted_array import btree_from_sorted_array
+# todo: tests for btree_from_sorted_array
