@@ -56,3 +56,6 @@ print("✓: " + str(max_abs_diff_ind))
 
 from btree_from_sorted_array import btree_from_sorted_array
 # todo: tests for btree_from_sorted_array
+
+from max_depth import max_depth
+# todo: tests for max_depth
