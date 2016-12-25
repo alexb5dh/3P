@@ -62,3 +62,6 @@ from max_depth import max_depth
 
 from max_depth_nr import max_depth_nr
 # todo: tests for max_depth_nr
+
+from balanced_tree import balanced_tree
+# todo: tests for balanced_tree
