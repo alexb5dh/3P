@@ -59,3 +59,6 @@ from btree_from_sorted_array import btree_from_sorted_array
 
 from max_depth import max_depth
 # todo: tests for max_depth
+
+from max_depth_nr import max_depth_nr
+# todo: tests for max_depth_nr
