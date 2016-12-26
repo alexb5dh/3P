@@ -75,4 +75,8 @@ from min_jumps import min_jumps
 assert min_jumps([2,3,1,1,4]) == 2
 print("✓: " + str(min_jumps))
 
-
+from interleaving_strings import interleaving_strings
+assert interleaving_strings('aabcc', 'dbbca', 'aadbbcbcac') == True
+assert interleaving_strings('aabcc', 'dbbca', 'aadbbbaccc') == False
+assert interleaving_strings('noU', '6i', 'n6ioU') == True
+print("✓: " + str(interleaving_strings))
