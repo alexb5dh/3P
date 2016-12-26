@@ -65,3 +65,8 @@ from max_depth_nr import max_depth_nr
 
 from balanced_tree import balanced_tree
 # todo: tests for balanced_tree
+
+from gas_station import gas_station
+assert gas_station(gas = [1, 2], cost = [2, 1]) == 1
+assert gas_station(gas = [684, 57, 602, 987], cost = [909, 535, 190, 976]) == -1
+print("✓: " + str(gas_station))
