@@ -70,3 +70,9 @@ from gas_station import gas_station
 assert gas_station(gas = [1, 2], cost = [2, 1]) == 1
 assert gas_station(gas = [684, 57, 602, 987], cost = [909, 535, 190, 976]) == -1
 print("✓: " + str(gas_station))
+
+from min_jumps import min_jumps
+assert min_jumps([2,3,1,1,4]) == 2
+print("✓: " + str(min_jumps))
+
+
