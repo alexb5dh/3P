@@ -80,3 +80,14 @@ assert interleaving_strings('aabcc', 'dbbca', 'aadbbcbcac') == True
 assert interleaving_strings('aabcc', 'dbbca', 'aadbbbaccc') == False
 assert interleaving_strings('noU', '6i', 'n6ioU') == True
 print("✓: " + str(interleaving_strings))
+
+from car_parking_by_index import car_parking_by_index
+actual, desired = [1, 2, 3, None, 4, 5], [1, 2, 3, None, 4, 5]
+assert car_parking_by_index(actual, desired) == 0 and actual == desired
+actual, desired = [1, 2, 3, None, 4, 5], [None, 2, 3, 1, 4, 5]
+assert car_parking_by_index(actual, desired) == 1 and actual == desired
+actual, desired = [1, 2, 3, None, 4, 5], [5, 1, None, 3, 2, 4]
+assert car_parking_by_index(actual, desired) == 8 and actual == desired
+actual, desired = [None, 1, 2, 3, 7, 6, 4, 5], [4, 6, 5, 1, 7, 3, 2, None]
+assert car_parking_by_index(actual, desired) == 9 and actual == desired
+print("✓: " + str(car_parking_by_index))
