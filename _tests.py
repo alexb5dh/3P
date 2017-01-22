@@ -103,3 +103,8 @@ assert smallest_range_all_arrays([5, 10, 15],
                                  [3, 6, 9, 12, 15],
                                  [8, 16, 24]) == (15, 16)
 print("✓: " + str(smallest_range_all_arrays))
+
+from fair_bonuses import fair_bonuses
+assert fair_bonuses([3, 4, 5, 2]) == [1,2,3,1]
+assert fair_bonuses([1, 2, 4, 2, 1]) == [1, 2, 3, 2, 1]
+print("✓: " + str(fair_bonuses))
