@@ -108,3 +108,12 @@ from fair_bonuses import fair_bonuses
 assert fair_bonuses([3, 4, 5, 2]) == [1,2,3,1]
 assert fair_bonuses([1, 2, 4, 2, 1]) == [1, 2, 3, 2, 1]
 print("✓: " + str(fair_bonuses))
+
+from pots_of_gold import pots_of_gold
+assert pots_of_gold([1, 2]) == 2
+assert pots_of_gold([2, 5, 1, 1]) == 6
+assert pots_of_gold([1, 2, 4, 8]) == 10
+assert pots_of_gold([5, 5, 10, 5, 9, 9, 3, 9, 5, 1]) == 33
+assert pots_of_gold([26, 1, 70, 11]) == 96
+assert pots_of_gold([3, 9, 2, 1]) == 10
+print("✓: " + str(pots_of_gold))
