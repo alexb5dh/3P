@@ -117,3 +117,12 @@ assert pots_of_gold([5, 5, 10, 5, 9, 9, 3, 9, 5, 1]) == 33
 assert pots_of_gold([26, 1, 70, 11]) == 96
 assert pots_of_gold([3, 9, 2, 1]) == 10
 print("✓: " + str(pots_of_gold))
+
+from levenshtein_distance import levenshtein_distance
+assert levenshtein_distance('a', 'a') == 0
+assert levenshtein_distance('a', 'b') == 1
+assert levenshtein_distance('abc', 'acb') == 2
+assert levenshtein_distance('hat', 'tape') == 3
+assert levenshtein_distance('Carthorse', 'Orchestra') == 8
+assert levenshtein_distance('abcdefg', 'xabxcdxxefxgx') == 6
+print("✓: " + str(levenshtein_distance))
