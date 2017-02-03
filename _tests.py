@@ -126,3 +126,11 @@ assert levenshtein_distance('hat', 'tape') == 3
 assert levenshtein_distance('Carthorse', 'Orchestra') == 8
 assert levenshtein_distance('abcdefg', 'xabxcdxxefxgx') == 6
 print("✓: " + str(levenshtein_distance))
+
+from longest_increasing_subsequence_dp import longest_increasing_subsequence_dp
+assert longest_increasing_subsequence_dp([1, 2, 3]) == 3
+assert longest_increasing_subsequence_dp([1, 0, 2]) == 2
+assert longest_increasing_subsequence_dp([5, 1, 10, 2]) == 2
+assert longest_increasing_subsequence_dp([7, 4, 3, 6, 2, 1, 5]) == 2
+assert longest_increasing_subsequence_dp([1, 3, 4, 6, 7, 2, 5]) == 5
+print("✓: " + str(longest_increasing_subsequence_dp))
