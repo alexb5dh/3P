@@ -165,3 +165,14 @@ assert knapsack([
     Item(weight = 82, value = 72)
 ], 165) == 309
 print("✓: " + str(knapsack))
+
+from partition import partition
+assert partition([1, 2, 3]) == True
+assert partition([8, 7, 6, 5, 4]) == True
+assert partition([4, 5, 6, 7, 8]) == True
+assert partition([3, 1, 1, 2, 2, 1]) == True
+assert partition([2, 5]) == False
+assert partition([4, 5, 7]) == False
+assert partition([1, 2, 3, 4, 5]) == False
+assert partition([7, 11, 4, 6, 8, 4]) == False
+print("✓: " + str(partition))
