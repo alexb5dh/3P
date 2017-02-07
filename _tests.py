@@ -134,3 +134,34 @@ assert longest_increasing_subsequence_dp([5, 1, 10, 2]) == 2
 assert longest_increasing_subsequence_dp([7, 4, 3, 6, 2, 1, 5]) == 2
 assert longest_increasing_subsequence_dp([1, 3, 4, 6, 7, 2, 5]) == 5
 print("✓: " + str(longest_increasing_subsequence_dp))
+
+class Item:
+    def __init__(self, **kwargs):
+        self.weight= kwargs['weight']
+        self.value = kwargs['value']
+
+from knapsack import knapsack
+assert knapsack([
+    Item(weight = 5, value = 60),
+    Item(weight = 3, value = 50),
+    Item(weight = 4, value = 70),
+    Item(weight = 2, value = 30)
+], 5) == 80
+assert knapsack([
+    Item(weight = 2, value = 20),
+    Item(weight = 2, value = 20),
+    Item(weight = 3, value = 30)
+], 6) == 50
+assert knapsack([
+    Item(weight = 23, value = 92),
+    Item(weight = 31, value = 57),
+    Item(weight = 29, value = 49),
+    Item(weight = 44, value = 68),
+    Item(weight = 53, value = 60),
+    Item(weight = 38, value = 43),
+    Item(weight = 63, value = 67),
+    Item(weight = 85, value = 84),
+    Item(weight = 89, value = 87),
+    Item(weight = 82, value = 72)
+], 165) == 309
+print("✓: " + str(knapsack))
