@@ -1,3 +1,5 @@
+from collections import namedtuple
+
 from power import power
 assert power(a = 0, n = 0) == 1
 assert power(a = 0, n = 1) == 0
@@ -135,12 +137,8 @@ assert longest_increasing_subsequence_dp([7, 4, 3, 6, 2, 1, 5]) == 2
 assert longest_increasing_subsequence_dp([1, 3, 4, 6, 7, 2, 5]) == 5
 print("✓: " + str(longest_increasing_subsequence_dp))
 
-class Item:
-    def __init__(self, **kwargs):
-        self.weight= kwargs['weight']
-        self.value = kwargs['value']
-
 from knapsack import knapsack
+Item = namedtuple('Item', ['weight', 'value'])
 assert knapsack([
     Item(weight = 5, value = 60),
     Item(weight = 3, value = 50),
