@@ -177,3 +177,6 @@ print("✓: " + str(partition))
 
 from bfs import bfs
 #todo: add tests for bfs
+
+Node = namedtuple('Node', ['value', 'children'])
+from dfs import dfs
