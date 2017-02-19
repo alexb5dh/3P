@@ -7,7 +7,7 @@
 
 from collections import deque
 
-# Graph breadth first traverse
+# Graph breadth first traversal
 def bfs(root):
     queue = deque([root])
     visited = set()
