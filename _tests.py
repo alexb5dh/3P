@@ -1,3 +1,4 @@
+# TODO: move tests to implementation files
 from collections import namedtuple
 
 from power import power
