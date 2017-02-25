@@ -7,7 +7,6 @@ from collections import deque
 
 # Undirected graph breadth first traversal
 # Graph represented as adjacency list dictionary: node -> [adjacent nodes]
-
 def bfs(graph, root):
     queue = deque([root])
     visited = set()
@@ -23,15 +22,17 @@ def bfs(graph, root):
             queue.append(child)
 
 # Tests
+from functools import partial
 from collections import defaultdict
+Graph = partial(defaultdict, list)
 
-graph = defaultdict(list, {
+graph = Graph({
     1: [2, 3],
     2: [4]
 })
 assert(list(bfs(graph, 1))== [1, 2, 3, 4])
 
-graph = defaultdict(list, {
+graph = Graph({
     1: [2, 3],
     2: [1, 4]
 })
