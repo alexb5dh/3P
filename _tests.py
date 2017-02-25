@@ -175,6 +175,3 @@ assert partition([4, 5, 7]) == False
 assert partition([1, 2, 3, 4, 5]) == False
 assert partition([7, 11, 4, 6, 8, 4]) == False
 print("✓: " + str(partition))
-
-from dfs import dfs
-#todo: add tests for dfs
