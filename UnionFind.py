@@ -28,8 +28,6 @@ class UnionFind:
         return True
 
 # Tests
-print(f'?: {str(UnionFind)}')
-
 uf1 = UnionFind(1)
 uf2 = UnionFind(2)
 assert(uf1.union(uf2))
